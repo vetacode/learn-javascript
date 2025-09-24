@@ -1,4 +1,5 @@
 //Objects are passed by reference
+//The Object was passed as a reference. Memory was saved (no full copy).But the caller’s data got changed → possible bug if you didn’t expect it.
 
 let obj = { name: 'John' };
 console.log(obj); // { name: 'John' }
