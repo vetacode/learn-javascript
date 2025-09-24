@@ -1,5 +1,4 @@
 //Primitives are passed by value
-
 let a = 4;
 console.log(a);
 let b = a;
@@ -11,11 +10,11 @@ function changeValue(num) {
   num = 10;
 }
 
-changeValue(a);
-console.log(a);
+changeValue(a); //
+console.log(a); //
 
+//Arrays and lists are typically first class objects and are passed by reference
 let num = [1, 2, 3, 5, 8, 9];
-
 console.log(num);
 
 function modifyArray(arr) {
