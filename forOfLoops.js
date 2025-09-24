@@ -36,3 +36,12 @@ for (const key of Object.keys(clothingItem)) {
 }
 
 */
+
+var farm = {
+  animals: 15,
+  farmers: 3,
+};
+
+for (prop of farm) {
+  console.log(prop);
+}
