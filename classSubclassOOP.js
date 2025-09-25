@@ -64,7 +64,6 @@ class Parrot extends Bird {
 }
 */
 
-/*
 class Animal {
   constructor(color = 'yellow', energy = 100) {
     this.color = color;
@@ -186,7 +185,7 @@ console.log(polly.energy); // 100
 polly.isActive(); // Energy is decreasing, currently at: 80
 
 var penguin = new Bird('shriek', false, 'black and white', 200); // setting all the custom properties
-console.log(penguin); // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
+console.log(penguin);
 
 penguin.sound; // 'shriek'
 penguin.canFly; // false
@@ -226,11 +225,9 @@ class WeddingCake extends Cake {
 var result = new WeddingCake();
 console.log(result.getLayers()); //10
 
-*/
+class Animal2 {}
 
-class Animal {}
-
-class Dog extends Animal {
+class Dog extends Animal2 {
   constructor() {
     super();
     this.noise = 'bark';
