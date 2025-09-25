@@ -8,17 +8,10 @@ for (i = 0; i < n - 1; i++) {
       minIndex = j;
     }
   }
-  // return minIndex;
+  [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+
+  console.log(arr);
 }
 
-console.log(minIndex);
-
-swap(arr[i], arr[minIndex]);
-
-function swap(a, b) {
-  let temp = a;
-  a = b;
-  b = temp;
-}
 console.log(arr);
 // O(n^2)
