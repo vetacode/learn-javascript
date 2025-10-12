@@ -23,3 +23,17 @@ const factorial = (n) => {
 };
 console.log(factorial(10));
 // 3628800
+
+function flatten(arr) {
+  const res = [];
+  for (const el of arr) {
+    if (Array.isArray(el)) {
+      res.push(...flatten(el));
+    } else {
+      res.push(el);
+    }
+  }
+  return res;
+}
+
+console.log(flatten([1, 2, [3, 4], 5]));
