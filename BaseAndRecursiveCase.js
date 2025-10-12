@@ -37,3 +37,4 @@ function flatten(arr) {
 }
 
 console.log(flatten([1, 2, [3, 4], 5]));
+console.log(flatten([1, [2, [3, 6, 9], 4], 5]));
