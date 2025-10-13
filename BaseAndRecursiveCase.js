@@ -24,6 +24,7 @@ const factorial = (n) => {
 console.log(factorial(10));
 // 3628800
 
+//FLATTEN ARRAY
 function flatten(arr) {
   const res = [];
   for (const el of arr) {
@@ -38,3 +39,22 @@ function flatten(arr) {
 
 console.log(flatten([1, 2, [3, 4], 5]));
 console.log(flatten([1, [2, [3, 6, 9], 4], 5]));
+
+//RENDER NESTED COMMENTS
+
+// comments: [{id, author, text, children: [...]}, ...]
+function renderComments(comments) {
+  if (!comments || comments.length === 0) return '';
+  return `<ul>${comments
+    .map(
+      (c) =>
+        `<li><strong>${escapeHtml(c.author)}}</strong>: ${excapeHtml(
+          c.text
+        )}${renderComments(c.children)}</li>`
+    )
+    .join('')}</ul>`;
+}
+
+console.log(renderComments());
+
+//escapeHtml is small helper to avoid injection (omitted here)
